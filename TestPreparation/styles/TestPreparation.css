@@ -1,0 +1,44 @@
+/*CSS za formatirarane na text razpolojenie cvqt i tn.*/
+/* . selektor za class*/
+/* # selektor za id*/
+#main-title {
+    text-align: center;
+}
+
+label {
+    font-size: 1.3em;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 80%;
+    align-content: center;
+}
+
+th, td {
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+
+table {
+    border-color: #FFF056;
+}
+
+fieldset.form-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.form-border {
+    font-weight: bold;
+    width:inherit;
+    padding:0 10px;
+    border-bottom:none;
+}

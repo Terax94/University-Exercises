@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--<h1> zaglavia </h1>-->
+<!--<p> paragrafi </p>-->
+<!--<div> edin vid chast ot paragrafa </div>-->
+<!-- grid sistemata razdelq stranicata na redove-->
+<!--referenciite za css sa v HEAD-->
+<!--referenciite za jscripta sa nai otdolu v BODY-->
+<html>
+
+<head>
+    <title>Rent a car</title>
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="styles/TestPreparation.css">
+    <link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css">
+    <link rel="stylesheet" href="styles/toastr.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="row">
+                <!--s class row bootstrap znae che se otdelq red ot grid sistemata vseki red ot grid sistemata se sustoi ot tochno 12 koloni-->
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1 id="main-title"><strong>Welcome to our car website</strong></h1>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <hr/>
+        </header>
+        <section>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <fieldset class="form-border">
+                            <legend class="form-border">Car filter:</legend>
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="car-model">Car model:</label>
+                                    <select name="cars" id="car-model" class="form-control">
+                                        <option value="">Car model</option>
+                                        <option value="Volvo">Volvo</option>
+                                        <option value="Saab">Saab</option>
+                                        <option value="Fiat">Fiat</option>
+                                        <option value="Audi">Audi</option>
+                                        <option value="BMW">BMW</option>
+                                        <option value="Mercedes">Mercedes</option>
+                                    </select>
+                                    <br/>
+                                    <label>Registration day:</label>
+                                    <textarea rows="1" placeholder="dd-mm-yyyy" type="text" class="form-control" id="reg-day"></textarea>
+                                    </br>
+                                    <label>Engine volume (cm<sup>3</sup>):</label>
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <select class="form-control" id="input-volume">
+                                                <option value="">Volume</option>
+                                                <option value="1000">1000</option>
+                                                <option value="1200">1200</option>
+                                                <option value="1400">1400</option>
+                                                <option value="1600">1600</option>
+                                                <option value="1800">1800</option>
+                                                <option value="2000">2000</option>
+                                                <option value="2600">2600</option>
+                                                <option value="3000">3000</option>
+                                                <option value="3200">3200</option>
+                                                <option value="5000">5000</option>
+                                                <option value="7500">7500</option>
+                                                <option value="8000">8000</option>
+                                                <option value="9000">9000</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-7"></div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <label>Additional information:</label>
+                                <textarea rows="7" placeholder="Pleace add aditional Information" type="text" class="form-control" id="input-info"></textarea>
+                                </br>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <button type="button" class="btn-lg btn-info" id="new-button">New</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="button" class="btn-lg btn-primary" id="submit-button">Save</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="reset" class="btn-lg btn-danger">Clear</button>
+                                    </div>
+                                </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="col-md-6 main-div">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="row" id="rightside">
+                                <table class="table table-bordered table-striped" id="record-table">
+                                    <tr>
+                                        <th>Car model</th>
+                                        <th>Rgistration date</th>
+                                        <th>Engine volume</th>
+                                        <th>Aditionla information</th>
+                                        <th>Edit</th>
+                                        <th>Remove</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+
+    <script src="scripts/jquery-1.11.3.min.js"></script>
+    <script src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+    <script src="scripts/TestPreparation.js"></script>
+    <script src="scripts/toastr.js"></script>
+</body>
+
+</html>
